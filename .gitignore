@@ -1,0 +1,11 @@
+.idea/*
+.classpath
+.project
+target
+.cache
+.ensime
+.ensime_lucene/
+.idea_modules/
+VIMSIDE_LOG
+.DS_Store
+

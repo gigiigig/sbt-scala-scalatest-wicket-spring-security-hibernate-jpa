@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>www.luigiantonini.it</title>
+    <meta content="authenticity_token" name="csrf-param" />
+  </head>
+  <body>
+  	
+    <wicket:extend>
+
+      <div class="container">
+        
+        <div class="navbar" id="main-navbar">
+          <div class="navbar-inner">
+            <ul class="nav">
+              <li  wicket:id="buttonDashboard" >
+                <a href="#"><wicket:message key="label.dashboard"/></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <wicket:child />
+
+      </div>
+
+    </wicket:extend>
+
+  </body>
+</html>

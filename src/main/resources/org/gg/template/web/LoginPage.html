@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>www.luigiantonini.it</title>
+    <meta content="authenticity_token" name="csrf-param" />
+  </head>
+  <body>
+
+    <wicket:extend>
+
+      <div class="container">
+        <div class="span6 well well-small offset3" id="login-panel">
+          <div class="row">
+            
+            <div class="span6">
+              <h1 class="span3 offset1"><small ><wicket:message key="label.login"/></small></h1>
+            </div>
+            
+            <div wicket:id="feedback" class="span5 feedback"></div>
+            
+            <form class="form-horizontal span6" id="login-form" wicket:id="loginform">
+              <div class="control-group">
+                <label class="control-label" for="inputEmail">
+                  <wicket:message key="label.email"/>
+                </label>
+                <div class="controls">
+                  <input type="text" id="inputEmail" placeholder="Email"  wicket:id="username">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="inputPassword">
+                  <wicket:message key="label.password"/>
+                </label>
+                <div class="controls">
+                  <input type="password" id="inputPassword" placeholder="Password" wicket:id="password">
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <label class="checkbox">
+                    <input type="checkbox"> Remember me
+                  </label>
+                  <button type="submit" class="btn">Sign in</button>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>      
+</div>
+</wicket:extend>
+
+</body>
+</html>
